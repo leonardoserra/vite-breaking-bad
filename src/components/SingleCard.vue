@@ -1,11 +1,6 @@
 <script>
 export default {
     name: "SingleCard",
-    data() {
-        return {
-
-        }
-    },
     props: {
         name: String,
         race: String,
@@ -24,8 +19,6 @@ export default {
 
 <style scoped lang="scss">
 .single-card {
-    width: calc(100% / 5);
-    height: 200px;
 
     img {
         display: inline-block;
