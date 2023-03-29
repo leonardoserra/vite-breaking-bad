@@ -41,8 +41,9 @@ export default {
         flex-wrap: wrap;
 
         .my-card {
-            width: calc(100% / 5);
-            height: 200px;
+            width: calc(100% / 5 - 40px);
+            height: calc(300px - 40px);
+            margin: 20px;
         }
     }
 }

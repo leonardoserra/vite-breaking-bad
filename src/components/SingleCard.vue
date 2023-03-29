@@ -26,17 +26,20 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../style/partials/colors" as*;
+
 .single-card {
 
 
 
     img {
-        height: 100px;
+        height: 200px;
     }
 
     h3,
     h4 {
-        color: black;
+        color: $tertiary-color;
+        font-size: 12px;
     }
 }
 </style>
