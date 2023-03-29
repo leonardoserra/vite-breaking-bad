@@ -1,6 +1,8 @@
 <script>
 import MyHeader from './components/MyHeader.vue';
 import MySelect from './components/MySelect.vue';
+import DeckBook from './components/DeckBook.vue';
+
 import axios from 'axios';
 import { store } from './store.js'
 
@@ -12,7 +14,8 @@ export default {
   },
   components: {
     MyHeader,
-    MySelect
+    MySelect,
+    DeckBook
   },
   methods: {
     getCards() {
@@ -31,7 +34,12 @@ export default {
 
 <template>
   <MyHeader />
-  <MySelect />
+  <main>
+    <div class="container">
+      <MySelect />
+      <DeckBook />
+    </div>
+  </main>
 </template>
 
 <style scoped lang="scss">

@@ -11,11 +11,13 @@ export default {
 
 
 <template>
-    <select id="race" name="race">
-        <option value="Dragon">Dragon</option>
-        <option value="Alien">Alien</option>
+    <div class="wrapper py-2">
 
-    </select>
+        <select id="race" name="race" class="btn">
+            <option value="Dragon">Dragon</option>
+            <option value="Alien">Alien</option>
+        </select>
+    </div>
 </template>
 
 
@@ -24,14 +26,8 @@ export default {
 @use "../style/partials/_colors.scss" as*;
 
 .wrapper {
-    height: 50px;
 
-    h1 {
-        color: $tertiary-color;
-    }
 
-    img {
-        width: 100px;
-    }
+    background-color: $primary-color;
 }
 </style>

@@ -1,8 +1,18 @@
 @use "bootstrap";
+@use "./partials/colors" as*;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+main {
+    background-color: $primary-color;
+
+    .container {
+        max-width: 80%;
+        margin: auto;
+    }
 }
