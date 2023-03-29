@@ -1,5 +1,6 @@
 <script>
 import MyHeader from './components/MyHeader.vue';
+import MySelect from './components/MySelect.vue';
 import axios from 'axios';
 import { store } from './store.js'
 
@@ -10,7 +11,8 @@ export default {
     }
   },
   components: {
-    MyHeader
+    MyHeader,
+    MySelect
   },
   methods: {
     getCards() {
@@ -29,6 +31,7 @@ export default {
 
 <template>
   <MyHeader />
+  <MySelect />
 </template>
 
 <style scoped lang="scss">
