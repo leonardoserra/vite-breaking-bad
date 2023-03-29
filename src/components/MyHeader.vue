@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-    <div class="wrapper ">
+    <div class="wrapper d-flex">
         <img src="/logo.png" alt="logo">
         <h1>Yu-Gi-Oh API</h1>
     </div>
@@ -27,6 +27,10 @@ export default {
 
     h1 {
         color: $tertiary-color;
+    }
+
+    img {
+        width: 100px;
     }
 }
 </style>

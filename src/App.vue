@@ -2,6 +2,7 @@
 import MyHeader from './components/MyHeader.vue';
 import axios from 'axios';
 import { store } from './store.js'
+
 export default {
   data() {
     return {
@@ -30,4 +31,6 @@ export default {
   <MyHeader />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use "./style/general.scss";
+</style>
