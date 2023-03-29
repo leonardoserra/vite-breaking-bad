@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="loading" v-if="store.loading">
+    <div class="loading d-flex justify-content-center align-items-center" v-if="store.loading">
         <h1> Caricamento pagina...Attendere</h1>
     </div>
 </template>
