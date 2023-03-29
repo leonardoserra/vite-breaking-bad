@@ -12,7 +12,8 @@ main {
     background-color: $primary-color;
 
     .my-container {
-        max-width: 80%;
+        width: 1000px;
+        min-width: 80%;
         margin: auto;
     }
 }
