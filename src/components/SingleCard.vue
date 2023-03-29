@@ -10,18 +10,27 @@ export default {
 </script>
 
 <template>
-    <div class="single-card" p-1>
-        <img :src="image" :alt="name">
-        <h3>{{ name }}</h3>
-        <h4>{{ race }}</h4>
+    <div class="single-card">
+        <div>
+            <img :src="image" :alt="name">
+        </div>
+
+        <div>
+            <h3>{{ name }}</h3>
+        </div>
+
+        <div>
+            <h4>{{ race }}</h4>
+        </div>
     </div>
 </template>
 
 <style scoped lang="scss">
 .single-card {
 
+
+
     img {
-        display: inline-block;
         height: 100px;
     }
 

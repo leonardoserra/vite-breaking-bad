@@ -1,6 +1,6 @@
 <script>
-import SingleCard from "./SingleCard.vue";
 import { store } from "../store.js";
+import SingleCard from "./SingleCard.vue";
 
 export default {
     name: 'DeckBook',
@@ -19,9 +19,8 @@ export default {
 <template>
     <div class="wrapper py-3">
         <div class="my-container">
-            <div class="my-card" v-for="(card, index) in this.store.cards.data" :key="index" :name="card.name"
-                :race="card.race" :image="card.card_images[0].image_url">
-                <SingleCard />
+            <div class="my-card" v-for="(card, index) in this.store.cards.data" :key="index">
+                <SingleCard :name="card.name" :race="card.race" :image="card.card_images[0].image_url" />
             </div>
         </div>
 
