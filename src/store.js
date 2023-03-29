@@ -4,4 +4,4 @@ export const store = reactive(
     {
         cards: []
     }
-)
+);

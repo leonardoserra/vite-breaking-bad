@@ -23,6 +23,8 @@ export default {
         .then(response => {
           this.store.cards = response.data;
           console.log(response.data);
+          console.log(this.store.cards.data[0].card_images[0].image_url);
+
         })
     }
   },
@@ -35,7 +37,7 @@ export default {
 <template>
   <MyHeader />
   <main>
-    <div class="container">
+    <div class="my-container">
       <MySelect />
       <DeckBook />
     </div>
