@@ -6,6 +6,9 @@ Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necess
 da screenshot allegato.
 Al caricamento della pagina, effettuate una chiama ajax all’API di Yu-Gi-Oh:
 https://ygoprodeck.com/api-guide/
+
+https://db.ygoprodeck.com/api/v7/cardinfo.php?level=12
+
 e con i dati restituiti, stampate una card per ogni carta.
 Bonus:
 Creare un componente loader da visualizzare fintantoché i risultati non sono pronti.
