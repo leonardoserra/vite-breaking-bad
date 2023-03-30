@@ -35,6 +35,7 @@ export default {
           console.log(response.data);
           console.log(this.store.selected)
           console.log(this.store.cards.data[0].card_images[0].image_url);
+          console.log(this.store.cards.data.length);
 
         })
     }

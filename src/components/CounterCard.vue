@@ -9,7 +9,12 @@ export default {
     },
     computed: {
         cardNumber() {
-            return this.store.cards.length;
+            let number = this.store.cards.data.length;
+            if (number) {
+                return `Numero di carte trovate: ${number}`;
+            } else {
+                return "Non sono presenti carte con questo archetipo";
+            }
         }
     }
 }
@@ -17,7 +22,7 @@ export default {
 
 <template>
     <div class="my-container">
-        <h3>Numero di carte trovate: {{ this.cardNumber }}</h3>
+        <h3>{{ cardNumber }}</h3>
         <!-- <h3 v-else>Non sono presenti carte con questo archetipo</h3> -->
     </div>
 </template>
