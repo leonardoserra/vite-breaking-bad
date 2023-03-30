@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="my-container">
-        <h3>{{ cardNumber }}</h3>
+        <h3>`il totale delle carte mostrate è: {{ cardNumber }}</h3>
         <!-- <h3 v-else>Non sono presenti carte con questo archetipo</h3> -->
     </div>
 </template>
