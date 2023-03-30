@@ -1,10 +1,16 @@
 <script>
+import { store } from "../store.js"
 export default {
     name: 'MySelect',
     data() {
         return {
-
+            store,
+            archetypesArray: []
         }
+    },
+    mounted() {
+        this.archetypesArray = this.store.map(card => card.data.archetype);
+        console.log(this.archetypesArray);
     }
 }
 </script>
@@ -13,9 +19,12 @@ export default {
 <template>
     <div class="wrapper py-2">
 
-        <select id="race" name="race" class="btn">
-            <option value="Dragon">Dragon</option>
-            <option value="Alien">Alien</option>
+        <select id="archetype" name="archetype" class="btn">
+            <option v-for="(card, index) in store.cards.data" :key="index" :value="card.archetype">
+                <!-- <div v-if="card.race != card[index - 1].race"> -->
+                {{ card.race }}
+                <!-- </div> -->
+            </option>
         </select>
     </div>
 </template>
