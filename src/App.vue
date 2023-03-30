@@ -35,7 +35,7 @@ export default {
           console.log(response.data);
           console.log(this.store.selected)
           console.log(this.store.cards.data[0].card_images[0].image_url);
-          console.log(this.store.cards.data.length);
+          console.log(`il totale delle carte mostrate è: ${this.store.cards.data.length}`);
 
         })
     }
@@ -54,7 +54,7 @@ export default {
   <LoaderBonus />
   <MyHeader />
   <main>
-    <CounterCard />
+    <CounterCard :cardNumber="this.store.cards.data.length" />
     <div class="my-container">
       <MySelect @getArchetype="getCards" />
       <DeckBook />

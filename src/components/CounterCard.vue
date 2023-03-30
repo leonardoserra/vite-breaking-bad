@@ -7,16 +7,10 @@ export default {
             store,
         }
     },
-    computed: {
-        cardNumber() {
-            let number = this.store.cards.data.length;
-            if (number) {
-                return `Numero di carte trovate: ${number}`;
-            } else {
-                return "Non sono presenti carte con questo archetipo";
-            }
-        }
+    props: {
+        cardNumber: Number
     }
+
 }
 </script>
 
