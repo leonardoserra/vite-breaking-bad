@@ -4,14 +4,13 @@ export default {
     name: 'MySelect',
     data() {
         return {
-            store,
-            archetypesArray: []
+            store
         }
-    },
-    mounted() {
-        this.archetypesArray = this.store.map(card => card.data.archetype);
-        console.log(this.archetypesArray);
     }
+    // mounted() {
+    //     this.archetypesArray = this.store.map(card => card.data.archetype);
+    //     console.log(this.archetypesArray);
+    // }
 }
 </script>
 
@@ -20,11 +19,14 @@ export default {
     <div class="wrapper py-2">
 
         <select id="archetype" name="archetype" class="btn">
-            <option v-for="(card, index) in store.cards.data" :key="index" :value="card.archetype">
-                <!-- <div v-if="card.race != card[index - 1].race"> -->
-                {{ card.race }}
-                <!-- </div> -->
-            </option>
+            <option value="Ancient Gear">Ancient Gear</option>
+            <option value="Ancient Warriors">Ancient Warriors</option>
+            <option value="Archfiend">Archfiend</option>
+            <!-- <option v-for="(card, index) in store.cards.data" :key="index" :value="card.archetype"> -->
+            <!-- <div v-if="card.race != card[index - 1].race"> -->
+            <!-- {{ card.race }} -->
+            <!-- </div> -->
+            <!-- </option> -->
         </select>
     </div>
 </template>

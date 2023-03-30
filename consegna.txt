@@ -19,7 +19,7 @@ continuate a lavorare nella stessa repo di ieri e
 aggiungete una select per filtrare i risultati in base
  all’archetipo: quando l’utente seleziona un valore dalla
   lista, viene effettuata una chiamata alle API filtrando 
-  per all’archetipo selezionato.
+  per archetipo selezionato.
 Bonus:
 Creare un componente che mostri il numero
  totale di risultati ottenuti.
