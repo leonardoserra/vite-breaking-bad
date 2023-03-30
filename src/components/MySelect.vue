@@ -27,8 +27,8 @@ export default {
             <option value="Apoqliphort">Apoqliphort</option>
             <option value="Vaylantz">Vaylantz</option>
             <option value="Fleur">Fleur</option>
-        <option value="Battlewasp">Battlewasp</option>
-        <option value="Blackwing">Blackwing</option>
+            <option value="Battlewasp">Battlewasp</option>
+            <option value="Blackwing">Blackwing</option>
             <option value="Toon">Toon</option>
             <option value="Dinomorphia">Dinomorphia</option>
             <option value="Archfiend">Archfiend</option>
@@ -43,9 +43,9 @@ export default {
             <option value="Stardust">Stardust</option>
             <option value="Train">Train</option>
 
-            <!-- <option v-for="(card, index) in store.cards.data" :key="index" :value="card.archetype">
-                    {{ card.archetype }}
-                </option> -->
+            <!-- <option v-for="(card, index) in store.cards.data" :key="index" :value="card.archetype"> -->
+            <!-- {{ card.archetype }} -->
+            <!-- </option> -->
         </select>
     </div>
 </template>
