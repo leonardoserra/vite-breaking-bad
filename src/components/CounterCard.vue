@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="my-container">
-        <h3>`il totale delle carte mostrate è: {{ cardNumber }}</h3>
+        <h3 class="px-3 py-1">Carte con questo archetipo: {{ cardNumber }}</h3>
         <!-- <h3 v-else>Non sono presenti carte con questo archetipo</h3> -->
     </div>
 </template>
@@ -24,5 +24,6 @@ export default {
 <style>
 .my-contaier {
     height: 20px;
+
 }
 </style>
