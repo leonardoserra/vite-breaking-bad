@@ -3,6 +3,7 @@ import MyHeader from './components/MyHeader.vue';
 import MySelect from './components/MySelect.vue';
 import DeckBook from './components/DeckBook.vue';
 import LoaderBonus from './components/LoaderBonus.vue';
+import CounterCard from './components/CounterCard.vue';
 
 import axios from 'axios';
 import { store } from './store.js'
@@ -17,7 +18,8 @@ export default {
     MyHeader,
     MySelect,
     DeckBook,
-    LoaderBonus
+    LoaderBonus,
+    CounterCard
   },
   methods: {
     getCards() {
@@ -31,6 +33,9 @@ export default {
         })
     }
   },
+  computed: {
+
+  },
   created() {
     this.getCards();
 
@@ -42,6 +47,7 @@ export default {
   <LoaderBonus />
   <MyHeader />
   <main>
+    <CounterCard />
     <div class="my-container">
       <MySelect />
       <DeckBook />
