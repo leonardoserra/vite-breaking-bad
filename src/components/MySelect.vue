@@ -18,7 +18,8 @@ export default {
 <template>
     <div class="wrapper py-2">
 
-        <select id="archetype" name="archetype" class="btn">
+        <select @change="$emit('getArchetype')" id=" archetype" name="archetype" class="btn" v-model="store.selected">
+            <option value="">-Filtra per archetipo-</option>
             <option value="Ancient Gear">Ancient Gear</option>
             <option value="Ancient Warriors">Ancient Warriors</option>
             <option value="Archfiend">Archfiend</option>

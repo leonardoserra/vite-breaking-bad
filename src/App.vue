@@ -23,11 +23,17 @@ export default {
   },
   methods: {
     getCards() {
-      axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?atk=3000')
+
+      let archetypeURL = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?atk=3000'
+      if (this.store.selected) {
+        archetypeURL += `&archetype=${this.store.selected}`
+      }
+      axios.get(archetypeURL)
         .then(response => {
           this.store.cards = response.data;
           this.store.loading = false;
           console.log(response.data);
+          console.log(this.store.selected)
           console.log(this.store.cards.data[0].card_images[0].image_url);
 
         })
@@ -49,7 +55,7 @@ export default {
   <main>
     <CounterCard />
     <div class="my-container">
-      <MySelect />
+      <MySelect @getArchetype="getCards" />
       <DeckBook />
     </div>
   </main>
